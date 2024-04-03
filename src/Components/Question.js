@@ -293,8 +293,8 @@ const Charts = ({ name }) => {
   return (
     <div className="container">
       <div className="pie-data">
-        <div className="lang-pie">
-          <h5 className="heading-lang">Languages that you use:</h5>
+        <div className="lang pie">
+          <h5 className="heading lang">Languages that you use:</h5>
           {loading && data?.length > 0 && (
             <PieChart width={400} height={400}>
               <Pie
@@ -325,8 +325,8 @@ const Charts = ({ name }) => {
           )}
         </div>
         {/* pie chart of submissions */}
-        <div className="Sub-pie">
-          <h5 className="heading-Sub">Submission Verdicts:</h5>
+        <div className="Sub pie">
+          <h5 className="heading Sub">Submission Verdicts:</h5>
           {loading && data.length > 0 && (
             <PieChart width={400} height={400}>
               <Pie
@@ -355,8 +355,8 @@ const Charts = ({ name }) => {
           )}
         </div>
         {/* Pie chart of all topics */}
-        <div className="topics-pie">
-          <h5 className="heading-topics">Topics you have done:</h5>
+        <div className="topics pie">
+          <h5 className="heading topics">Topics you have done:</h5>
           {loading && data.length > 0 && (
             <PieChart width={400} height={400}>
               <Pie
@@ -389,7 +389,7 @@ const Charts = ({ name }) => {
 
       {/* Bar Graphs of indexes */}
       <div className="problem-bar">
-        <h5 className="problems-heading">Problems Solved</h5>
+        <h5 className="problems heading">Problems Solved</h5>
         <BarChart
           width={1000}
           height={600}
@@ -414,7 +414,7 @@ const Charts = ({ name }) => {
         </BarChart>
       </div>
       <div className="ratings-graph">
-        <h5 className="ratings-heading">Ratings Graph</h5>
+        <h5 className="ratings heading">Ratings Graph</h5>
         <BarChart
           width={1000}
           height={600}
